@@ -157,10 +157,12 @@ This is compatible with the wildcard syntax described above.
 
 The first time you use it, the model is downloaded. It is approximately 500mb and so will take some time depending on how fast your connection is. It will also take a few seconds on first activation as the model is loaded into memory. Note, if you're low in VRAM, you might get a Cuda error. My GPU uses less than 8GB by YMMV.
 
-## Bundled modifier files (optional)
-If you don't want to make your own wildcard files or prefer a batteries-included approach, we have provided a large, and hopefully useful taxonomy of modifiers. It's a work in progress, and unfortunately, hierarchies are a terrible way to classify concepts and ideas. You will almost certainly see a modifier that should belong somewhere else.
+## Collections 
+The collections directory contains modifier libraries that you can use as is or use to bootstrap your own. Copy the collection that you want to use into the wildcards directory. Note, in previous versions, the collections were in the wildcards directory. This has now changed so that your own collections don't get clobbered every time you want to update the extension.
 
-It's also useful to have a peek at how wildcards are nested inside wildcard files to give you ideas for your modifier library. Feel free to help organise these files.
+If you're using a Unix/Linux O/S, you can easily create a symlink to the relevant collection rather than copying it across if you don't plan to alter it. E.g.
+
+	ln -sr collections/parrotzone wildcards/
 
 
 ## WILDCARD_DIR
