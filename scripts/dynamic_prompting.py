@@ -34,7 +34,7 @@ class Script(scripts.Script):
         wildcard_html = ui_creation.probe()
 
         html_path = base_dir / "helptext.html"
-        html = html_path.open().read()
+        html = html_path.open(encoding='UTF8').read()
         html = Template(html).substitute(wildcard_html=wildcard_html, WILDCARD_DIR=WILDCARD_DIR)
 
         is_combinatorial = gr.Checkbox(label="Combinatorial generation", value=False, elem_id="is-combinatorial")
