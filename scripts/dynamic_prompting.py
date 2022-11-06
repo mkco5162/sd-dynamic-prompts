@@ -27,7 +27,7 @@ wildcard_manager = WildcardManager(WILDCARD_DIR)
 
 class Script(scripts.Script):
     def title(self):
-        return f"Dynamic Prompting v{VERSION}"
+        return f"다이나믹 프롬프트 v{VERSION}"
 
     def ui(self, is_img2img):
         ui_creation = UiCreation(wildcard_manager)
